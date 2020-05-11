@@ -1,0 +1,45 @@
+﻿<Window x:Class="Birthday.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Birthday"
+        mc:Ignorable="d"
+        Title="输入密码" Height="450" Width="597.417" ResizeMode="CanMinimize" Closing="MainWindow_Closing">
+    <Grid Margin="0,0,-2,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="MainWindowPicture.jpg" Stretch="Uniform" Opacity="0.65"/>
+        </Grid.Background>
+        <TextBox x:Name="num1" HorizontalAlignment="Left" Height="105" Margin="69,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.463,1.063" BorderThickness="0,0,0,5" FontSize="80" BorderBrush="#FF60736B" SelectionBrush="#FF0078D7" MaxLines="1" MaxLength="2" TextAlignment="Center" TextChanged="num1_TextChanged">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF5E7269" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+
+
+
+        <Button x:Name="button" Content="确定" HorizontalAlignment="Left" Margin="216,306,0,0" VerticalAlignment="Top" Width="164" Height="48" FontSize="35" FontFamily="Microsoft YaHei" BorderThickness="0" Foreground="WhiteSmoke" Click="Button_Click">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="num4" HorizontalAlignment="Left" Height="105" Margin="454,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.463,1.063" BorderThickness="0,0,0,5" FontSize="80" BorderBrush="#FF5E7269" SelectionBrush="#FF0078D7" MaxLength="2" TextAlignment="Center" TextChanged="num4_TextChanged" MaxLines="1">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF5E7269" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="num3" HorizontalAlignment="Left" Height="105" Margin="329,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.463,1.063" BorderThickness="0,0,0,5" FontSize="80" BorderBrush="#FF60736B" SelectionBrush="#FF0078D7" MaxLines="1" MaxLength="2" TextAlignment="Center" TextChanged="num3_TextChanged">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF5E7269" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="num2" HorizontalAlignment="Left" Height="105" Margin="195,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.463,1.063" BorderThickness="0,0,0,5" FontSize="80" BorderBrush="#FF5E7269" SelectionBrush="#FF0078D7" MaxLines="1" MaxLength="2" TextAlignment="Center" TextChanged="num2_TextChanged">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF5E7269" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lable" Content="" Margin="216,49,108,291" FontSize="50"/>
+        <Button x:Name="closeButton" Content="放弃了" HorizontalAlignment="Left" Margin="122,135,0,0" VerticalAlignment="Top" Width="111" Height="39" FontSize="20" Foreground="White" Background="#FF91B8A6" Padding="-1,0,0,0" BorderBrush="{x:Null}" BorderThickness="0" Click="closeButton_Click" Visibility="Hidden"/>
+        <Button x:Name="returnButton" Content="再想想" HorizontalAlignment="Left" Margin="371,135,0,0" VerticalAlignment="Top" Width="111" Height="39" FontSize="20" Foreground="White" Background="#FF91B8A6" Padding="-1,0,0,0" BorderBrush="{x:Null}" BorderThickness="0" Click="returnButton_Click" Visibility="Hidden"/>
+    </Grid>
+</Window>

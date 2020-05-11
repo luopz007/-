@@ -1,0 +1,20 @@
+﻿<Window x:Class="Birthday.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Birthday"
+        mc:Ignorable="d"
+        Title="拍个脑壳重新想" ResizeMode="NoResize" Height="450" Width="597.417" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="ErrorWindowPicture.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Label Content="           憨           憨" Margin="10,46,4,296" FontSize="50">
+        <Label.Foreground>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFFFAE00" Offset="0"/>
+                <GradientStop Color="Red" Offset="1"/>
+            </LinearGradientBrush>
+        </Label.Foreground>
+    </Label>
+</Window>   
